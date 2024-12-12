@@ -1,0 +1,500 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("../fonts/Satoshi-Variable.woff2") format("woff2"), url("../fonts/Satoshi-Variable.woff") format("woff"), url("../fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("../fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../fonts/Satoshi-VariableItalic.woff") format("woff"), url("../fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"), url("../fonts/Satoshi-LightItalic.woff") format("woff"), url("../fonts/Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff"), url("../fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"), url("../fonts/Satoshi-MediumItalic.woff") format("woff"), url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+.talk {
+  color: #0E0E0E !important;
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff"), url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff"), url("../fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff"), url("../fonts/Satoshi-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+body {
+  justify-content: center !important; /* Центрирование по горизонтали */
+  align-items: center !important; /* Центрирование по вертикали */
+  height: 100vh; /* Высота на весь экран */
+  margin: 0; /* Убираем отступы */
+  background-color: #0E0E0E !important; /* Задний фон */
+  color: white !important; /* Цвет текста для лучшей читаемости */
+}
+
+.navbar {
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для эффекта стекла */
+  font-family: "Satoshi", sans-serif; /* Установка шрифта Satoshi */
+  color: #DAC5A7; /* Цвет шрифта */
+  border: 2px solid rgba(218, 197, 167, 0.3); /* Полупрозрачная рамка вокруг навигационной панели */
+  border-radius: 5px; /* Закругленные углы рамки (по желанию) */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Размытие фона для эффекта стекла */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.talk {
+  color: black;
+}
+
+.link1 {
+  color: #DAC5A7 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white !important;
+}
+
+.navbar-brand {
+  color: #DAC5A7 !important;
+  font-size: 35px !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(218, 197, 167, 0.3); /* Adjust border color if needed */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23DAC5A7' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("fonts/Satoshi-Variable.woff2") format("woff2"), url("fonts/Satoshi-Variable.woff") format("woff"), url("fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+.navbar-nav {
+  font-family: "Satoshi-Variable";
+  font-size: 15px;
+}
+
+.container {
+  text-align: center; /* Центрирование текста */
+}
+
+.image {
+  max-width: 100%; /* Максимальная ширина изображения */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  margin-bottom: 20px; /* Отступ снизу для текста */
+  margin-top: -50px;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.title {
+  color: #DAC5A7; /* Цвет текста заголовка */
+  font-weight: 100;
+  margin-top: -100px;
+}
+
+.subcontainer {
+  color: rgba(218, 197, 167, 0.5607843137);
+  font-family: "Chillax";
+}
+
+.card-container {
+  display: flex; /* Используем Flexbox для горизонтального расположения карточек */
+  justify-content: center;
+  font-family: "Satoshi-Variable";
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для эффекта стекла */
+  color: #DAC5A7; /* Цвет текста внутри карточки */
+  border: 2px solid rgba(218, 197, 167, 0.3); /* Полупрозрачная рамка */
+  border-radius: 5px; /* Закругленные углы */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Размытие фона для эффекта стекла */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Легкая тень для глубины */
+  margin: 20px;
+}
+
+.card-title {
+  color: #DAC5A7 !important; /* Цвет заголовка карточки */
+}
+
+.card-subtitle {
+  color: rgba(218, 197, 167, 0.5607843137) !important;
+}
+
+.card-text {
+  color: rgba(218, 197, 167, 0.5607843137) !important;
+}
+
+.card-link {
+  color: #DAC5A7 !important; /* Цвет ссылок внутри карточки */
+}
+
+.card-link:hover {
+  color: white !important; /* Цвет ссылок при наведении */
+}
+
+/* Ограничения по размерам для изображений в карусели */
+.carousel-inner img {
+  max-width: 300px; /* Ограничение ширины до 100% родительского контейнера */
+  max-height: 300px; /* Максимальная высота изображения */
+  -o-object-fit: cover;
+     object-fit: cover; /* Обеспечивает правильное соотношение сторон */
+}
+
+footer {
+  margin-top: 100px;
+  background-color: rgba(218, 197, 167, 0.0509803922);
+  color: #fff;
+  padding: 40px;
+  padding-left: 40px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer h3 {
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+footer p {
+  text-align: left;
+}
+
+footer ul li {
+  text-align: left;
+  display: inline; /* Изменено на inline для горизонтального расположения */
+  margin-right: 20px;
+}
+
+.all-footer {
+  display: flex; /* Используем Flexbox для горизонтального расположения */
+  justify-content: space-between; /* Распределяем пространство между элементами */
+  align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+  gap: 20px; /* Пробел между элементами */
+  height: auto; /* Высота автоматически подстраивается под содержимое */
+  max-width: 100%;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.block {
+  height: 100px;
+}
+
+.social-button {
+  display: inline-block; /* Обеспечиваем горизонтальное расположение кнопок соцсетей */
+  margin-right: 10px; /* Отступ между кнопками соцсетей */
+}
+
+.all-footer {
+  color: rgba(218, 197, 167, 0.6274509804);
+  font-family: "Satoshi-Variable";
+}
+
+.all-footer h3 {
+  color: #DAC5A7;
+  font-family: "Satoshi-Variable";
+}
+
+.btn-primary {
+  color: #0E0E0E;
+  font-family: "Satoshi-Variable";
+  border: none !important;
+}
+
+.badge {
+  display: flex;
+  color: rgba(218, 197, 167, 0.6274509804);
+  font-family: "Satoshi-Variable";
+}
+
+.btn-primary {
+  background-color: #DAC5A7 !important;
+}
+
+.container3 {
+  display: flex; /* Используем Flexbox для центрирования */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  flex-direction: column; /* Вертикальное расположение элементов внутри контейнера */
+  margin-left: 30%;
+}
+
+.card {
+  width: 601px; /* Максимальная ширина карточки */
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для карточки */
+  border: 2px solid rgba(218, 197, 167, 0.3); /* Полупрозрачная рамка */
+  border-radius: 3px; /* Закругленные углы */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Эффект размытия фона */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+  color: #DAC5A7; /* Цвет текста внутри карточки */
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов внутри карточки */
+}
+
+.card-body {
+  flex-grow: 1; /* Позволяет телу карточки занимать доступное пространство */
+  padding: 10px; /* Отступы внутри тела карточки */
+}
+
+.card-title {
+  font-family: "Satoshi"; /* Установка шрифта Satoshi для заголовка */
+  font-size: 1.5rem; /* Размер шрифта заголовка */
+}
+
+.card-text {
+  font-family: "Satoshi"; /* Установка шрифта Satoshi для текста */
+  font-size: 1rem; /* Размер шрифта текста */
+  color: rgba(218, 197, 167, 0.6274509804);
+}
+
+.logo-icon {
+  font-family: "Satoshi";
+}
+
+.card-img-top {
+  margin-top: auto; /* Отталкивает изображение вниз карточки */
+  margin-bottom: 10px; /* Отступ снизу изображения */
+  margin-left: 10px; /* Отступ слева изображения */
+  margin-right: 10px; /* Отступ справа изображения */
+  width: calc(100% - 20px); /* Устанавливаем ширину изображения с учетом отступов (10px слева и справа) */
+  border-radius: 0 0 10px 10px; /* Закругление нижних углов изображения для соответствия карточке */
+}
+
+.subcard-title {
+  color: rgba(218, 197, 167, 0.6274509804);
+}
+
+/* Стили для маленьких карточек */
+.small-card-container {
+  display: flex; /* Используем Flexbox для размещения маленьких карточек в ряд */
+  justify-content: center; /* Центрируем маленькие карточки по горизонтали */
+  flex-wrap: wrap; /* Позволяет переносить карточки на новую строку при нехватке места */
+}
+
+.small-card {
+  width: 187px; /* Ширина маленькой карточки с учетом отступов (20px) между ними */
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для маленькой карточки */
+  border: 2px solid rgba(218, 197, 167, 0.3); /* Полупрозрачная рамка для маленькой карточки */
+  border-radius: 3px; /* Закругленные углы для маленькой карточки */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Эффект размытия фона для маленькой карточки */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для глубины маленькой карточки */
+  color: #DAC5A7; /* Цвет текста внутри маленькой карточки */
+  position: relative; /* Для позиционирования иконки стрелочки в правом верхнем углу */
+  margin: 10px; /* Отступ между маленькими карточками */
+}
+
+.small-card-logo {
+  margin-left: 10px;
+  display: flex;
+  font-family: "Satoshi";
+  align-items: center;
+  height: 50px; /* Высота логотипа (можете изменить) */
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.awards-card {
+  width: 601px; /* Ширина карточки наград */
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для карточки */
+  border: 2px solid rgba(218, 197, 167, 0.3); /* Полупрозрачная рамка */
+  border-radius: 3px; /* Закругленные углы */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Эффект размытия фона */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+  color: #DAC5A7; /* Цвет текста внутри карточки */
+  padding: 10px; /* Отступы внутри карточки */
+}
+
+.awards-title {
+  font-family: "Satoshi"; /* Установка шрифта Satoshi для заголовка */
+  font-size: 1.5rem; /* Размер шрифта заголовка */
+  margin-bottom: 10px; /* Отступ снизу заголовка */
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов внутри списка наград */
+}
+
+.award-item {
+  display: flex;
+  justify-content: space-between; /* Размещаем название награды и год по краям */
+  padding: 5px 0; /* Отступы между элементами списка */
+}
+
+hr {
+  border: none; /* Убираем стандартный стиль линии */
+  border-top: 1px solid rgba(218, 197, 167, 0.3); /* Стиль линии */
+  margin: 5px 0; /* Отступы вокруг линии */
+}
+
+.container2 {
+  align-items: center; /* Центрируем элементы по вертикали */
+  text-align: left; /* Выравниваем текст влево внутри контейнера */
+}
+
+.image {
+  max-width: 50%; /* Максимальная ширина изображения */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  margin-right: 20px; /* Отступ справа для разделения с текстом */
+}
+
+.title {
+  font-size: 80px; /* Размер шрифта заголовка */
+  color: #DAC5A7; /* Цвет текста заголовка */
+  font-family: "Gambetta"; /* Шрифт заголовка */
+}
+
+.subcontainer2 {
+  color: rgba(218, 197, 167, 0.5607843137);
+  font-family: "Chillax";
+  font-family: "Satoshi";
+}
+
+.about-me {
+  display: flex; /* Используем flexbox для выравнивания логотипа и текста */
+  align-items: center; /* Центрируем по вертикали */
+  margin-top: 20px; /* Отступ сверху для разделения с предыдущим текстом */
+}
+
+.about-me img {
+  width: 30px; /* Ширина логотипа */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  margin-right: 10px; /* Отступ справа от логотипа */
+}
+
+.about-me-title {
+  font-size: 12px; /* Размер шрифта для ABOUT ME */
+  color: #DAC5A7; /* Цвет текста для ABOUT ME */
+  font-family: "Chillax"; /* Шрифт для ABOUT ME */
+}
+
+.regcontainer input {
+  color: #DAC5A7;
+}
+.regcontainer input::-moz-placeholder {
+  align-items: start;
+}
+.regcontainer input::placeholder {
+  align-items: start;
+}
+
+@media screen and (max-width: 379px) {
+  .work img {
+    max-width: 350px !important;
+  }
+  .regcontainer {
+    max-width: 340px !important;
+  }
+  .card {
+    max-width: 320px !important;
+  }
+  .title {
+    font-size: 5rem !important;
+    max-width: 350px !important;
+  }
+  .all-footer ul {
+    display: none;
+  }
+  .logo {
+    max-width: 360px !important;
+  }
+  .card-container {
+    max-width: 360px !important;
+  }
+  .awards-card {
+    max-width: 300px !important;
+  }
+}
+@media screen and (max-width: 769px) {
+  .review {
+    margin-top: 20px !important;
+  }
+  .container3 {
+    margin-left: 0 !important;
+  }
+}/*# sourceMappingURL=style.css.map */

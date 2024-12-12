@@ -1,0 +1,435 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-магазин</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <style>
+        
+        body {
+            justify-content: center; /* Центрирование по горизонтали */
+            align-items: center; /* Центрирование по вертикали */
+            height: 100vh; /* Высота на весь экран */
+            margin: 0; /* Убираем отступы */
+            background-color: #0E0E0E; /* Задний фон */
+            color: white; /* Цвет текста для лучшей читаемости */
+        }
+    </style>
+
+
+
+
+
+<!-- Навигация -->
+<style>
+.navbar {
+    background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для эффекта стекла */
+    font-family: 'Satoshi', sans-serif; /* Установка шрифта Satoshi */
+    color: #DAC5A7; /* Цвет шрифта */
+    border: 2px solid rgba(218, 197, 167, 0.3); /* Полупрозрачная рамка вокруг навигационной панели */
+    border-radius: 5px; /* Закругленные углы рамки (по желанию) */
+    backdrop-filter: blur(10px); /* Размытие фона для эффекта стекла */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Легкая тень для глубины */
+}
+.navbar-nav .nav-link {
+    color: #DAC5A7; /* Цвет шрифта для ссылок */
+}
+.navbar-nav .nav-link:hover {
+    color: white; /* Цвет при наведении */
+}
+.navbar-brand{
+    color: #DAC5A7;
+    font-size: 25px;
+}
+.navbar-toggler {
+    border-color: rgba(218, 197, 167, 0.3); /* Adjust border color if needed */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23DAC5A7' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+
+@font-face {
+    font-family: 'Satoshi-Variable';
+    src: url('fonts/Satoshi-Variable.woff2') format('woff2'),
+         url('fonts/Satoshi-Variable.woff') format('woff'),
+         url('fonts/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 300; 
+    font-display: swap;
+    font-style: normal;
+}
+
+.navbar-nav {
+    font-family: 'Satoshi-Variable';
+    font-size: 15px;
+}
+
+</style>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+<div class="container-fluid">
+<a class="navbar-brand" href="#" id="brandButton">aric.</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">MAIN</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">REGISTRATION</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">AUTHORIZATION</a></li>
+    </ul>
+</div>
+</div>
+</nav>
+
+
+
+
+
+<style>
+    .container {
+            text-align: center; /* Центрирование текста */
+        }
+
+        .image {
+            max-width: 100%; /* Максимальная ширина изображения */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            margin-bottom: 20px; /* Отступ снизу для текста */
+            margin-top: -50px;
+            max-width: 50%;
+            max-height: 50%;
+        }
+
+        .title {
+            font-size: 80px; /* Размер шрифта заголовка */
+            color: #DAC5A7; /* Цвет текста заголовка */
+            font-family: 'Gambetta'; /* Шрифт заголовка */
+            margin-top: -100px;
+        }
+
+        .subcontainer{
+            color: #dac5a78f;
+            font-family: 'Chillax'
+        }
+</style>
+
+
+<style>
+    .regcontainer {
+        background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для эффекта стекла */
+        border: 2px solid rgba(218, 197, 167, 0.3); /* Полупрозрачная рамка */
+        border-radius: 10px; /* Закругленные углы */
+        padding: 20px; /* Внутренние отступы */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Легкая тень для глубины */
+        backdrop-filter: blur(10px); /* Размытие фона для эффекта стекла */
+    }
+
+    .regcontainer h2{
+        color: #DAC5A7; /* Цвет меток формы */
+    }
+
+
+    .form-label {
+        color: #DAC5A7; /* Цвет меток формы */
+    }
+
+    .form-control {
+        background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон для полей ввода */
+        color: white; /* Цвет текста в полях ввода */
+        border: 1px solid rgba(218, 197, 167, 0.3); /* Полупрозрачная рамка */
+    }
+
+    .form-control::placeholder {
+        color: #DAC5A7; /* Цвет плейсхолдера */
+    }
+
+    .btn-primary {
+        background-color: #DAC5A7; /* Цвет кнопки */
+        border: none; /* Убираем рамку */
+    }
+
+    .btn-primary:hover {
+        background-color: #C2B09B; /* Цвет кнопки при наведении */
+    }
+
+    p {
+        color: #DAC5A7; /* Цвет текста в параграфах */
+    }
+</style>
+
+<style>
+    .block{
+        height: 100px;
+    }
+</style>
+
+<div class="block">
+</div>
+<div class="regcontainer">
+    <h2>Authorization</h2>
+
+    <form id="loginForm" onsubmit="return handleLogin(event)">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username" class="form-control"/>
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your Password" class="form-control"/>
+        </div>
+
+        
+        <button type="button" class="btn btn-primary" id="liveAlertBtn">Login</button>
+        <div id="liveAlertPlaceholder"></div>
+    </form>
+
+    <p>Don't have an account? Go to page <a href="register.html">Registration</a>.</p>
+</div>
+
+<style>
+   
+.btn-primary {
+    background-color: #DAC5A7; /* Цвет кнопки "Сохранить изменения" */
+    border: none; /* Убираем границу у кнопки */
+}
+
+.btn-primary:hover {
+    background-color: white; /* Цвет кнопки при наведении */
+    color: #0E0E0E; /* Цвет текста при наведении */
+}
+
+.btn-secondary {
+    background-color: transparent; /* Прозрачный фон для кнопки "Закрыть" */
+    color: #DAC5A7; /* Цвет текста кнопки "Закрыть" */
+    border: 2px solid #DAC5A7; /* Рамка для кнопки "Закрыть" */
+}
+
+.btn-secondary:hover {
+    background-color: #DAC5A7; /* Цвет фона при наведении на кнопку "Закрыть" */
+    color: white; /* Цвет текста при наведении на кнопку "Закрыть" */
+}
+</style>
+
+
+<!-- Подключение JS Bootstrap -->
+<script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+    // Автоматически открываем модальное окно при загрузке страницы
+    $(document).ready(function() {
+        $('#exampleModal').modal('show');
+    });
+</script>
+
+
+<script>
+    // Обработка авторизации
+    function handleLogin(event) {
+        event.preventDefault(); // Предотвращаем отправку формы
+    
+        // Здесь вы можете добавить логику для обработки авторизации
+    
+        // Уведомление об успешной авторизации
+        alert('you logged in successfully!');
+    
+        // Вернемся на главную страницу или другую страницу по вашему выбору
+        window.location.href = "index.html";
+    }
+    </script>
+
+
+<script>
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('you logged in successfully!', 'success')
+  })
+}
+</script>
+
+
+
+
+
+<style>
+    footer {
+        background-color: #DAC5A70D;
+        color: #fff;
+        padding: 40px;
+        padding-left: 40px;
+    }
+
+    footer ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    footer h3 {
+        text-align: left;
+        color: rgb(255, 255, 255);
+    }
+
+    footer p {
+        text-align: left;
+    }
+
+    footer ul li {
+        text-align: left;
+        display: inline; /* Изменено на inline для горизонтального расположения */
+        margin-right: 20px;
+    }
+
+    .all-footer {
+        display: flex; /* Используем Flexbox для горизонтального расположения */
+        justify-content: space-between; /* Распределяем пространство между элементами */
+        align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+        gap: 20px; /* Пробел между элементами */
+        height: auto; /* Высота автоматически подстраивается под содержимое */
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .social-button {
+        display: inline-block; /* Обеспечиваем горизонтальное расположение кнопок соцсетей */
+        margin-right: 10px; /* Отступ между кнопками соцсетей */
+    }
+
+    .all-footer{
+        color: #dac5a7a0;
+        font-family: 'Satoshi-Variable';
+    }
+
+    .all-footer h3{
+        color: #DAC5A7;
+        font-family: 'Satoshi-Variable';
+    }
+
+    .btn-primary{
+        color:#0E0E0E;
+        font-family: 'Satoshi-Variable';
+    }
+
+    .badge{
+        display: flex;
+        color: #dac5a7a0;
+        font-family: 'Satoshi-Variable';
+    }
+</style>
+
+<style>
+    .block{
+        height: 100px;
+    }
+</style>
+
+<div class="block">
+</div>
+
+<footer>
+
+    <br> <br><br><br><br>
+    <div class="container">
+        
+        <h1 class="title">Let’s make your <br> Website shine </h1>
+        <div class="subcontainer">
+            Our process ensures that we create a website <br>tailored to your business needs.
+        </div>
+        <br>
+        <a href="#" class="btn btn-primary">GO SOMEWHERE<img src="ph_arrow-up-right-light.png"></a>
+    </div>
+
+
+    
+    <div class="block">
+    </div>
+
+
+    <div class="all-footer">
+        <div class="footer footer1">
+            <h3>arik.</h3> <br>
+            <ul>
+                <li class="badge">
+                        <div class="logotip"><img src="Badge.png" alt="#" width="30"> INSTAGRAM </div>
+                </li>
+                <br>
+                <li class="badge">
+                        <div class="logotip"><img src="Badge (1).png" alt="#" width="30"> TWITTER</div>
+                </li>
+                <br> 
+                <li class="badge">
+                        <div class="logotip"><img src="Badge (2).png" alt="#" width="30"> DRIBBBLE</div>   
+                </li>
+                <br> 
+                <li class="badge">
+                        <div class="logotip"><img src="Badge (3).png" alt="#" width="30"> BEHANCE</div>   
+                </li>
+            </ul>
+        </div>
+        <div class="footer footer2">
+            <h3>Pages</h3> <br>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="index.html">MAIN</a></li>  
+                <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">REGISTRATION</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">AUTHORIZATION</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html"><a href="#" class="btn btn-primary">MORE TEMPLATES<img src="ph_arrow-up-right-light.png"></a></a></li>
+                
+            </ul>
+        </div>
+        <div class="footer footer3">
+            <h3>CMS</h3> <br>
+            <ul>
+                <li >WORK</li> <br> <br>
+                <li >WORD SINGLE</li> <br> <br>
+                <li >BLOG</li></a></li> <br> <br>
+                <li >BLOG POST</a></li> <br> <br>
+            </ul>
+        </div>
+        <div class="footer footer4">
+            <h3>Utility Pages</h3> <br>
+            <ul>
+                <li >404 ERROR PAGE</li> <br>  <br>
+                <li >PASSWORD PROTECTED</li> <br> <br>
+                <li >STYLEGUIDE</li></a></li> <br> <br>
+                <li >LICENSING</a></li> <br> <br> 
+                <li >CHANGELOG</a></li> <br> <br>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
